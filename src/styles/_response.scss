@@ -1,0 +1,45 @@
+@import "./variables";
+
+.response {
+  max-width: 668px;
+  width: 100%;
+  margin: 150px auto;
+  color: $white;
+  position: relative;
+  text-align: center;
+
+  &__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 120%;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 34px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__img {
+    position: relative;
+    top: -150px;
+    max-width: 260px;
+    width: 100%;
+    max-height: 260px;
+    height: 100%;
+    z-index: -1;
+  }
+}

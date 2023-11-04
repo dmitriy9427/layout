@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <header>
+        <nav class="header">
+          <div class="header__logo">
+            <img src="<%=require('./images/Portfolio.svg')%>" alt="логотип" />
+          </div>
+          <img
+            class="header__burger"
+            src="<%=require('./images/burger-menu-svgrepo-com.svg')%>"
+            alt="burger"
+          />
+          <nav class="header__navbar">
+            <li class="header__navbar-item"><a href="#">Обо мне</a></li>
+            <li class="header__navbar-item"><a href="#">Проекты</a></li>
+            <li class="header__navbar-item"><a href="#">Обзоры</a></li>
+            <li class="header__navbar-item"><a href="#">Контакты</a></li>
+          </nav>
+        </nav>
+
+        <div class="burger">
+          <img
+            src="<%=require('./images/close-bold-svgrepo-com.svg')%>"
+            alt="закрыть"
+            class="burger__close"
+          />
+          <ul class="burger__list">
+            <li class="burger__list-item"><a href="#">Обо мне</a></li>
+            <li class="burger__list-item"><a href="#">Проекты</a></li>
+            <li class="burger__list-item"><a href="#">Обзоры</a></li>
+            <li class="burger__list-item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="user">
+          <div class="user__info">
+            <h1 class="user__title">Дмитрий Рябов</h1>
+            <h2 class="user__subtitle">Frontend-разработчик</h2>
+            <ul class="user__items">
+              <li class="user__items-item">UI / UX Design</li>
+              <li class="user__items-item">QA Testing</li>
+              <li class="user__items-item">Mobile Apps</li>
+              <li class="user__items-item">Web development</li>
+            </ul>
+          </div>
+          <div class="user__img">
+            <img src="<%=require('./images/image.svg')%>" alt="шар" />
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="about">
+          <h2 class="title">Обо мне</h2>
+
+          <h3 class="subtitle">История моего развития:</h3>
+          <ul class="about__items">
+            <li class="about__items-item">
+              <p>2015</p>
+              <span>Первый проект. Блог для учителя</span>
+            </li>
+            <li class="about__items-item">
+              <p>2016</p>
+              <span>Разработка первого мобильного приложения</span>
+            </li>
+            <li class="about__items-item">
+              <p>2017</p>
+              <span>Портфолио включает более 100 проектов</span>
+            </li>
+            <li class="about__items-item">
+              <p>2018</p>
+              <span>Первый международный проект</span>
+            </li>
+            <li class="about__items-item">
+              <p>2019</p>
+              <span>Запуск персонального курса веб-разработки</span>
+            </li>
+            <li class="about__items-item">
+              <p>2020+</p>
+              <span>Начал работать в Google</span>
+            </li>
+          </ul>
+        </section>
+        <section class="projects">
+          <h2 class="title">Проекты</h2>
+          <h3 class="subtitle">более 100 проектов на разные темы:</h3>
+          <ul class="projects__category">
+            <li class="projects__category-item">Блог</li>
+            <li class="projects__category-item">CRM</li>
+            <li class="projects__category-item">Образовательная платформа</li>
+            <li class="projects__category-item">Банковские приложения</li>
+            <li class="projects__category-item">Мобильные приложения</li>
+            <li class="projects__category-item">Мобильные игры</li>
+            <li class="projects__category-item">Социальные сети</li>
+          </ul>
+          <div class="projects__blog">
+            <h3 class="projects__blog-title">Блог</h3>
+            <ul class="projects__blog-list">
+              <li class="projects__blog-list-item">Блог1</li>
+              <li class="projects__blog-list-item">Блог2</li>
+              <li class="projects__blog-list-item">Блог3</li>
+            </ul>
+
+            <div class="projects__blog-arrow">
+              <img src="<%=require('./images/arrow1.svg')%>" alt="arrow1" />
+              <img src="<%=require('./images/arrow2.svg')%>" alt="arrow3" />
+              <img src="<%=require('./images/arrow3.svg')%>" alt="arrow3" />
+            </div>
+          </div>
+        </section>
+
+        <section class="response">
+          <h3 class="response__title">
+            Напишите мне, и я отвечу в течение следующих 24 часов
+          </h3>
+          <p class="response__subtitle">Обсудите проект</p>
+
+          <img
+            class="response__img"
+            src="<%=require('./images/ellipse.svg')%>"
+            alt="arrow1"
+          />
+        </section>
+
+        <section class="reviews">
+          <h3 class="title">Обзоры</h3>
+          <h4 class="subtitle">Что говорят обо мне мои клиенты:</h4>
+          <div class="reviews__rev">
+            <div class="reviews__burrows">
+              <img src="<%=require('./images/lincoln.svg')%>" alt="arrow1" />
+              <h4 class="reviews__burrows-name">Линкольн Берроуз</h4>
+              <p class="reviews__burrows-recommendation">
+                Спасибо Майклу за то, что он все сделал качественно, в срок и
+                без проволочек. Я рекомендую этого специалиста для работы.
+                Особая благодарность Майклу за работу, которая не была включена
+                в оригинал.
+              </p>
+            </div>
+            <div class="reviews__burrows">
+              <img src="<%=require('./images/morgan.svg')%>" alt="arrow1" />
+              <h4 class="reviews__burrows-name">Гретхен Морган</h4>
+              <p class="reviews__burrows-recommendation">
+                Большое вам спасибо за вашу работу, проект был завершен очень
+                быстро и эффективно. Я рекомендую его как надежного исполнителя!
+                Я свяжусь с вами в будущем.
+              </p>
+            </div>
+            <div class="reviews__burrows">
+              <img src="<%=require('./images/paul.svg')%>" alt="arrow1" />
+              <h4 class="reviews__burrows-name">Пол Келлерман</h4>
+              <p class="reviews__burrows-recommendation">
+                Исполнитель, который конкретно понимает поставленную задачу.
+                Очень классный и простой в общении. Я проделал отличную работу,
+                я свяжусь с вами. Советую всем!
+              </p>
+            </div>
+          </div>
+          <div class="reviews__imgs">
+            <img
+              class="reviews__imgs-back"
+              src="<%=require('./images/back.svg')%>"
+              alt="arrow1"
+            />
+            <img
+              class="reviews__imgs-next"
+              src="<%=require('./images/next.svg')%>"
+              alt="arrow1"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
