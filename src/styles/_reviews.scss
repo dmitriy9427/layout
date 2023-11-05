@@ -3,23 +3,44 @@
 .reviews {
   color: $white;
   margin-bottom: 150px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    margin-bottom: 75px;
+  }
 
   // .reviews__burrows
   &__rev {
     display: flex;
     flex-direction: row;
     column-gap: 23px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   &__burrows {
     max-width: 410px;
     padding: 35px 28px;
     background-color: rgba(24, 24, 24, 0.59);
     text-align: center;
-    @media (max-width: 715px) {
-      display: flex;
-      flex-direction: column;
-      column-gap: 0;
-      row-gap: 15px;
+
+    &:nth-child(1) {
+      @media (max-width: 768px) {
+        margin: 0 auto;
+      }
+    }
+
+    &:nth-child(2) {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &:nth-child(3) {
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     &-name {
@@ -45,31 +66,38 @@
     row-gap: 57px;
     margin-top: 30px;
 
-    &-back {
-      width: 72px;
-      height: 34px;
-      transition: all 0.4s ease;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.3);
-        color: rgba(19, 120, 239, 1);
-      }
-
-      @media (max-width: 768px) {
-      }
+    @media (max-width: 768px) {
+      justify-content: space-between;
     }
 
-    &-next {
-      width: 72px;
-      height: 34px;
-      transition: all 0.4s ease;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.3);
+    &-btn {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      background-color: rgba(19, 120, 239, 1);
+      cursor: pointer;
+      img {
+        transition: all 0.4s ease;
+        &:hover {
+          transform: scale(1.3);
+        }
       }
+    }
+  }
 
-      @media (max-width: 768px) {
-      }
+  .back {
+    &:hover {
+      transform: translate(-12px);
+    }
+  }
+
+  .next {
+    &:hover {
+      transform: translate(12px);
     }
   }
 }

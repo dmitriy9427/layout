@@ -6,6 +6,9 @@
     <title>Портфолио</title>
   </head>
   <body>
+    <div class="cursor"></div>
+    <div class="follower"></div>
+
     <div class="overlay">
       <header>
         <nav class="header">
@@ -18,10 +21,18 @@
             alt="burger"
           />
           <nav class="header__navbar">
-            <li class="header__navbar-item"><a href="#">Обо мне</a></li>
-            <li class="header__navbar-item"><a href="#">Проекты</a></li>
-            <li class="header__navbar-item"><a href="#">Обзоры</a></li>
-            <li class="header__navbar-item"><a href="#">Контакты</a></li>
+            <li class="header__navbar-item link">
+              <a data-scroll href="#about">Обо мне</a>
+            </li>
+            <li class="header__navbar-item link">
+              <a data-scroll href="#projects">Проекты</a>
+            </li>
+            <li class="header__navbar-item link">
+              <a data-scroll href="#reviews">Обзоры</a>
+            </li>
+            <li class="header__navbar-item link">
+              <a data-scroll href="#footer">Контакты</a>
+            </li>
           </nav>
         </nav>
 
@@ -32,10 +43,18 @@
             class="burger__close"
           />
           <ul class="burger__list">
-            <li class="burger__list-item"><a href="#">Обо мне</a></li>
-            <li class="burger__list-item"><a href="#">Проекты</a></li>
-            <li class="burger__list-item"><a href="#">Обзоры</a></li>
-            <li class="burger__list-item"><a href="#">Контакты</a></li>
+            <li class="burger__list-item link">
+              <a data-scroll href="#about">Обо мне</a>
+            </li>
+            <li class="burger__list-item link">
+              <a data-scroll href="#projects">Проекты</a>
+            </li>
+            <li class="burger__list-item link">
+              <a data-scroll href="#reviews">Обзоры</a>
+            </li>
+            <li class="burger__list-item link">
+              <a data-scroll href="#footer">Контакты</a>
+            </li>
           </ul>
         </div>
 
@@ -50,68 +69,82 @@
               <li class="user__items-item">Web development</li>
             </ul>
           </div>
-          <div class="user__img">
-            <img src="<%=require('./images/image.svg')%>" alt="шар" />
-          </div>
+          <canvas id="canvasOne" width="550" height="550">
+            Your browser does not support HTML5 canvas.
+          </canvas>
         </div>
       </header>
 
       <main>
-        <section class="about">
+        <section id="about" class="about">
           <h2 class="title">Обо мне</h2>
 
           <h3 class="subtitle">История моего развития:</h3>
           <ul class="about__items">
-            <li class="about__items-item">
+            <li class="about__items-item link">
               <p>2015</p>
               <span>Первый проект. Блог для учителя</span>
             </li>
-            <li class="about__items-item">
+            <li class="about__items-item link">
               <p>2016</p>
               <span>Разработка первого мобильного приложения</span>
             </li>
-            <li class="about__items-item">
+            <li class="about__items-item link">
               <p>2017</p>
               <span>Портфолио включает более 100 проектов</span>
             </li>
-            <li class="about__items-item">
+            <li class="about__items-item link">
               <p>2018</p>
               <span>Первый международный проект</span>
             </li>
-            <li class="about__items-item">
+            <li class="about__items-item link">
               <p>2019</p>
               <span>Запуск персонального курса веб-разработки</span>
             </li>
-            <li class="about__items-item">
+            <li class="about__items-item link">
               <p>2020+</p>
               <span>Начал работать в Google</span>
             </li>
           </ul>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
           <h2 class="title">Проекты</h2>
           <h3 class="subtitle">более 100 проектов на разные темы:</h3>
           <ul class="projects__category">
-            <li class="projects__category-item">Блог</li>
-            <li class="projects__category-item">CRM</li>
-            <li class="projects__category-item">Образовательная платформа</li>
-            <li class="projects__category-item">Банковские приложения</li>
-            <li class="projects__category-item">Мобильные приложения</li>
-            <li class="projects__category-item">Мобильные игры</li>
-            <li class="projects__category-item">Социальные сети</li>
+            <li class="projects__category-item link">Блог</li>
+            <li class="projects__category-item link">CRM</li>
+            <li class="projects__category-item link">
+              Образовательная платформа
+            </li>
+            <li class="projects__category-item link">Банковские приложения</li>
+            <li class="projects__category-item link">Мобильные приложения</li>
+            <li class="projects__category-item link">Мобильные игры</li>
+            <li class="projects__category-item link">Социальные сети</li>
           </ul>
           <div class="projects__blog">
             <h3 class="projects__blog-title">Блог</h3>
             <ul class="projects__blog-list">
-              <li class="projects__blog-list-item">Блог1</li>
-              <li class="projects__blog-list-item">Блог2</li>
-              <li class="projects__blog-list-item">Блог3</li>
+              <li class="projects__blog-list-item link">Блог1</li>
+              <li class="projects__blog-list-item link">Блог2</li>
+              <li class="projects__blog-list-item link">Блог3</li>
             </ul>
 
             <div class="projects__blog-arrow">
-              <img src="<%=require('./images/arrow1.svg')%>" alt="arrow1" />
-              <img src="<%=require('./images/arrow2.svg')%>" alt="arrow3" />
-              <img src="<%=require('./images/arrow3.svg')%>" alt="arrow3" />
+              <img
+                class="link"
+                src="<%=require('./images/arrow1.svg')%>"
+                alt="arrow1"
+              />
+              <img
+                class="link"
+                src="<%=require('./images/arrow2.svg')%>"
+                alt="arrow3"
+              />
+              <img
+                class="link"
+                src="<%=require('./images/arrow3.svg')%>"
+                alt="arrow3"
+              />
             </div>
           </div>
         </section>
@@ -120,7 +153,7 @@
           <h3 class="response__title">
             Напишите мне, и я отвечу в течение следующих 24 часов
           </h3>
-          <p class="response__subtitle">Обсудите проект</p>
+          <p class="response__subtitle">Обсудим проект</p>
 
           <img
             class="response__img"
@@ -129,7 +162,7 @@
           />
         </section>
 
-        <section class="reviews">
+        <section id="reviews" class="reviews">
           <h3 class="title">Обзоры</h3>
           <h4 class="subtitle">Что говорят обо мне мои клиенты:</h4>
           <div class="reviews__rev">
@@ -163,20 +196,48 @@
             </div>
           </div>
           <div class="reviews__imgs">
-            <img
-              class="reviews__imgs-back"
-              src="<%=require('./images/back.svg')%>"
-              alt="arrow1"
-            />
-            <img
-              class="reviews__imgs-next"
-              src="<%=require('./images/next.svg')%>"
-              alt="arrow1"
-            />
+            <div class="reviews__imgs-btn">
+              <img
+                class="back link"
+                src="<%=require('./images/back.svg')%>"
+                alt="arrow1"
+              />
+            </div>
+            <div class="reviews__imgs-btn">
+              <img
+                class="next link"
+                src="<%=require('./images/next.svg')%>"
+                alt="arrow1"
+              />
+            </div>
           </div>
         </section>
       </main>
+
+      <footer id="footer" class="footer">
+        <div class="footer__form">
+          <h3 class="footer__form-title">
+            Рассчитайте сроки и стоимость вашего проекта
+          </h3>
+          <p class="footer__form-subtitle">
+            Оставьте свой номер телефона для связи
+          </p>
+          <input class="footer__form-input" type="text" placeholder="Имя" />
+          <input class="footer__form-input" type="tel" placeholder="Телефон" />
+          <textarea
+            class="footer__form-textarea"
+            name="message"
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="Сообщение"
+          ></textarea>
+          <button class="footer__form-btn link">Обсудить проект</button>
+        </div>
+      </footer>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
