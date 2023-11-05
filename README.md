@@ -2,7 +2,7 @@
 
 ## Ссылка:
 
-<a target="_blank" href="">Ссылка для просмотра</a>
+<a target="_blank" href="https://dmitriy9427.github.io/layout/">Ссылка для просмотра</a>
 
 ## Описание:
 
